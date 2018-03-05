@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Shakibgram@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="Shakibgram">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="Library"/>
+    <schema id="5" parent="1" name="Monjogh"/>
+    <schema id="6" parent="1" name="mysql"/>
+    <schema id="7" parent="1" name="performance_schema"/>
+    <schema id="8" parent="1" name="RFE"/>
+    <schema id="9" parent="1" name="sys"/>
+    <table id="10" parent="2" name="ChatInfo"/>
+    <table id="11" parent="2" name="ContactInfo"/>
+    <table id="12" parent="2" name="MessageInfo"/>
+    <table id="13" parent="2" name="UserInfo"/>
+    <column id="14" parent="10" name="ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="15" parent="10" name="UserId">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="16" parent="10" name="OtherUserId">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="17" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="18" parent="11" name="ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="19" parent="11" name="UserId">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="20" parent="11" name="OtherUserId">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="21" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="22" parent="12" name="ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="23" parent="12" name="SenderUserId">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="24" parent="12" name="Message">
+      <Position>3</Position>
+      <DataType>varchar(1000)|0</DataType>
+    </column>
+    <column id="25" parent="12" name="CreateDate">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="26" parent="12" name="Status">
+      <Position>5</Position>
+      <DataType>varchar(1)|0</DataType>
+    </column>
+    <column id="27" parent="12" name="ChatId">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="28" parent="12" name="SenderName">
+      <Position>7</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <key id="29" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="30" parent="13" name="ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="31" parent="13" name="UserName">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="32" parent="13" name="Password">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="33" parent="13" name="Name">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="13" name="Status">
+      <Position>5</Position>
+      <DataType>varchar(1)|0</DataType>
+    </column>
+    <column id="35" parent="13" name="VerifyCode">
+      <Position>6</Position>
+      <DataType>varchar(5)|0</DataType>
+    </column>
+    <column id="36" parent="13" name="EmailAddress">
+      <Position>7</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="37" parent="13" name="ImageUrl">
+      <Position>8</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="38" parent="13" name="HasLoggedIn">
+      <Position>9</Position>
+      <DataType>bit(1)|0</DataType>
+    </column>
+    <column id="39" parent="13" name="IsAdmin">
+      <Position>10</Position>
+      <DataType>bit(1)|0</DataType>
+    </column>
+    <column id="40" parent="13" name="IpAddress">
+      <Position>11</Position>
+      <DataType>varchar(16)|0</DataType>
+    </column>
+    <column id="41" parent="13" name="RegisterDate">
+      <Position>12</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="42" parent="13" name="LastActivityDate">
+      <Position>13</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <index id="43" parent="13" name="UserInfo_UNIQUE">
+      <ColNames>UserName</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="44" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="45" parent="13" name="UserInfo_UNIQUE">
+      <ColNames>UserName</ColNames>
+      <UnderlyingIndexName>UserInfo_UNIQUE</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>

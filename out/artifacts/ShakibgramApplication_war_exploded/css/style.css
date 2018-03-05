@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Open Sans';
+    background-color: #95a5a6;
+}
+
+a {
+    text-decoration: none;
+}
+
+div#header {
+    width: 100%;
+    height: 8%;
+    background-color: #29323c;
+    margin: 0 auto;
+}
+
+.logo {
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 1%;
+    color: white;
+}
+
+div#container {
+    background-size: 100% auto;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sidebar {
+    width: 150px;
+    background: #29323c;
+    float: right;
+    height: 100%;
+}
+
+ul#nav {
+
+}
+
+ul#nav li {
+    list-style: none;
+    height: 10px;
+    /*background-image: url("../images/success.png");*/
+
+}
+
+ul#nav li span {
+    position: relative;
+}
+
+ul#nav li span img {
+    float: left;
+    display: block;
+    margin-left: 1px;
+    margin-top: 2px;
+}
+
+#usersNav {
+    color: #ccc;
+    display: block;
+    padding: 10px;
+    font-size: 0.8em;
+    width: 100%;
+    float: right;
+    text-align: right;
+    border-bottom: 1px solid #444;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+#chatNav {
+    color: #ccc;
+    display: block;
+    padding: 10px;
+    font-size: 0.8em;
+    width: 100%;
+    float: right;
+    text-align: right;
+    border-bottom: 1px solid #444;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+ul#nav li p:hover {
+    background: #72a81f;
+    color: #fff;
+}
+
+ul#nav li p.selected {
+    background: #72a81f;
+    color: #fff;
+}
+
+.chats {
+    display: none;
+    width: 250px;
+    background: white;
+    float: right;
+    height: 100%;
+    overflow: auto;
+}
+
+ul#chat-nav {
+}
+
+ul#chat-nav li {
+    list-style: none;
+    height: 10px;
+}
+
+.chat-item {
+    color: #29323c;
+    display: block;
+    padding: 10px;
+    font-size: 0.8em;
+    width: 100%;
+    float: right;
+    text-align: right;
+    border-bottom: 1px solid #444;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+ul#chat-nav li a:hover {
+    background: #72a81f;
+    color: white;
+}
+
+ul#chat-nav li a.selected {
+    background: #72a81f;
+    color: white;
+}
+
+.content {
+    width: auto;
+    height: 100%;
+    background: #95a5a6;
+    margin-right: 350px;
+    padding: 15px;
+}
+
+.users {
+    width: 100%;
+    background: white;
+    float: right;
+    display: none;
+}
+
+ul#user-nav {
+}
+
+ul#user-nav li {
+    list-style: none;
+    height: 10px;
+}
+
+.user-item {
+    color: white;
+    display: block;
+    padding: 10px;
+    font-size: 0.8em;
+    width: 100%;
+    float: right;
+    text-align: right;
+    border-bottom: 1px solid #444;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.content p {
+    color: #424242;
+    fonnt-size: 0.8em;
+}
+
+div.box {
+    margin-top: 15px;
+}
+
+div#box .box-top {
+    color: #fff;
+    text-shadow: 0 1px #000;
+    background: #2980b9;
+    padding: 5px;
+    padding-left: 15px;
+    font-weight: 300;
+}
+
+div#box .box-panel {
+    padding: 15px;
+    background: #fff;
+    color: #333;
+}
